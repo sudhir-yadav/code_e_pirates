@@ -1,0 +1,120 @@
+<style type="text/css">
+  .bar.bar-positive {
+border-color: #38BCF5;
+background-color: #38BCF5;
+background-image: linear-gradient(0deg, #0c63ee, #0c63ee 50%, transparent 50%);
+color: #fff;
+}
+
+li
+{
+  font-size:13px !important;
+}
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+.item h2 {
+  margin: 10px 0 2px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+.cstm_header{
+  background: rgb(109, 167, 224);
+  padding:10px;
+}
+.cstm_header h2{ color:#fff;font-size:18px; }
+.cstm_header p{ color:rgb(34, 33, 33); }
+.cstm_body p
+{
+  margin:0;
+}
+
+</style>
+
+
+<ion-view view-title="About application" hide-nav-bar="true" class='cstm_bg'>
+
+<div class="bar bar-header bar-positive">
+  <button ng-click="toggleLeftSideMenu()" class="button button-icon icon ion-navicon"></button>
+  <h1 class="title"> Sudhir' room 1 </h1>
+  </div>
+
+  <ion-content  class="has-header abts_pg">
+  <div style="background:rgba(0,0,0,0.3);margin-top:-15px;">
+
+      <div style="width: 217px;margin:auto;overflow: hidden;margin-top:15px;">
+        
+          <span style="display:inline-block;background:url('img/sutron_mob_logo.png')center no-repeat;height:60px;width:60px;background-size:100%;float:left;"></span>
+
+          <div style="color:white;float:left;line-height: 45px;margin-left: 5px;">
+             <span style="font-size: 27px;color:#fff;margin:0 !important;font-weight:900;">PEBBLE</span>
+             <small style="font-size: 11px;display: block;margin-top: -28px;text-align:center;">Compete the smarter world</small>
+          </div>
+
+      </div>
+
+      </div>
+   
+     <ul class="list">
+
+  <li class="item item-toggle">
+     Outer light
+     <label class="toggle toggle-balanced">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+
+  <li class="item item-toggle">
+     Room light
+     <label class="toggle toggle-balanced">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+
+
+  <li class="item item-toggle">
+     Fan
+     <label class="toggle toggle-balanced">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+
+  <li class="item item-toggle">
+     Bulb
+     <label class="toggle toggle-balanced">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+
+
+
+</ul>
+
+
+
+  </ion-content>
+</ion-view>

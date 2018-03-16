@@ -1,0 +1,107 @@
+<style type="text/css">
+  .bar.bar-positive {
+border-color: #38BCF5;
+background-color: #38BCF5;
+background-image: linear-gradient(0deg, #0c63ee, #0c63ee 50%, transparent 50%);
+color: #fff;
+}
+
+li
+{
+  font-size:13px !important;
+}
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+.item h2 {
+  margin: 10px 0 2px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+.cstm_header{
+  background: rgb(109, 167, 224);
+  padding:10px;
+}
+.cstm_header h2{ color:#fff;font-size:18px; }
+.cstm_header p{ color:rgb(34, 33, 33); }
+.cstm_body p
+{
+  margin:0;
+}
+
+</style>
+
+
+<ion-view view-title="About application" hide-nav-bar="true" class='cstm_bg'>
+
+<div class="bar bar-header bar-positive">
+  <button ng-click="toggleLeftSideMenu()" class="button button-icon icon ion-navicon"></button>
+  <h1 class="title">Notifications </h1>
+  </div>
+
+  <ion-content  class="has-header abts_pg">
+
+
+<!--     <div class="list card">
+
+        <div class="item cstm_header">
+          <h2>New Updated Version  </h2>
+          <p>April 28, 2015 09:29:54 pm</p>
+        </div>
+
+        <div class="item item-body cstm_body">
+          <p>
+            Welcome to the newer , faster version of Rto utility . We hope you like our service . For any queries regarding application , contact us at support@rtoutility.com .
+          </p>
+         
+        </div>
+
+   </div> -->
+
+   <div ng-if="notifications.length == 0" style="
+    /* font-size: 70px; */
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(224, 224, 224);
+">
+      
+      <i style="font-size:80px;margin: 30px;" class="fa fa-bell-o"></i><br>
+      <p style="
+    font-size: 20px;
+">No Recent Notification</p>
+
+   </div>
+
+   <div ng-repeat="notification in notifications" class="list card">
+
+        <div class="item cstm_header">
+          <h2>{{notification.header}}</h2>
+          <p>{{notification.footer}}</p>
+        </div>
+
+        <div class="item item-body cstm_body">
+          <p>
+           {{notification.body}}
+          </p>
+         
+        </div>
+
+   </div>
+
+
+
+
+  </ion-content>
+</ion-view>

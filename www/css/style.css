@@ -1,0 +1,12 @@
+/* Empty. Add your own CSS if you like */
+
+@font-face 
+{
+    font-family: shruti;
+    src: url(shruti.ttf);
+}
+
+.guj_language_opt
+{
+	font-family: 'shruti' !important ;
+}

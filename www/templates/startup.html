@@ -1,0 +1,63 @@
+<style>
+.ion-content-bg
+{
+  text-align:center;
+}
+  @keyframes bounce_up_down 
+    {
+       0%,20%,40%,60%,80%,100%  {transform: translateY(0);}
+       10%,30%,50%,70%,90% {transform: translateY(-10px);}
+     }
+::-webkit-input-placeholder {
+   text-align: center;
+}
+    .ion-content-bg{
+   // background:url('img/nirma1.jpg')center no-repeat;
+     background:rgba(255, 186, 0, 0.05)
+ 
+    }
+</style>
+
+<ion-view view-title="Browse" hide-nav-bar="true" >
+  <ion-content class="ion-content-bg" scroll="false" >
+    
+     
+
+
+  <div style="margin-top:27%;">
+    <div style=" height:200px;width:200px;background:url('img/n_logo.png')center no-repeat;background-size:100%;margin:auto;-webkit-animation: bounce_up_down 26s ease-in-out infinite;animation: bounce_up_down 26s ease-in-out infinite; "></div>
+
+    <!--<h1 style="font-size: 30px; margin-bottom: -4px;color:#4B4C4C;  font-weight: 200;"><span style="color:#437AB8;">CAMPUS</span> UTILITY</h1>
+    <small style="color:color: rgb(107, 105, 105);font-weight: 200;">Compete the smater world</small>-->
+
+      <h1 style="font-size: 35px; margin-bottom:1px;color:#4B4C4C;font-weight:700;color:#7C451E;">TRESURE <span style="color:#FDBE13;">HUNT</span></h1>
+      <small style="color:color: rgb(107, 105, 105);font-weight: 500;font-size:14px;">IGNITE MINDS , BE A DETECTIVE</small>
+      
+   </div>
+
+     <form ng-submit="submitForm(login.$valid)" novalidate name="login" class="ng-pristine ng-valid" style="
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    top: 106px;
+  //  padding: 20px;
+">
+
+  <button ng-click="scanBarcode()" style="
+    box-shadow:0px 0px 8px rgba(0,0,0,0.28);border-radius: 45px;padding:10px;width:250px;margin:35px auto;background-color:orange;color:#fff;font-weight:600;outline:0;border:0;
+">
+       SCAN QR CODE 
+
+
+  </button>
+
+ 
+
+         </form>
+
+
+
+  </ion-content>
+
+  <div style="position:absolute;bottom:5px;margin:auto;text-align:center;width:100%;color:#888888;">NIRMA UNIVERSITY , MCA DEPARTMENT</div>
+</ion-view>
